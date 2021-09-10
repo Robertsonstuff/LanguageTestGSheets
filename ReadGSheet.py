@@ -1,7 +1,7 @@
-import gspread
+import gspread # pip install gspread
 
-gc = gspread.service_account(filename='cred.json')
-sh = gc.open_by_key('1Ujqtjm6-F5VO3dhi3fehOCQoFtL8xvEihadRdPAajc8')
+gc = gspread.service_account(filename='cred.json') # this is the your json file from your google drive api key.
+sh = gc.open_by_key('file_iD')
 worksheet = sh.sheet1
 max_cols = len(worksheet.col_values(1))
 
